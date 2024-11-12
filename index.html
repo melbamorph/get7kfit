@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Get 7K Fit - Fitness Tracker</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Get 7K Fit</div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#workouts">Workouts</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#admin">Admin</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard">
+        <div class="dashboard-container">
+            <h2>Welcome Back, [User]</h2>
+            <div class="progress-cards">
+                <div class="progress-card">
+                    <h3>Daily Calories</h3>
+                    <div class="progress-bar" style="width: 60%;">1500/2500 kcal</div>
+                </div>
+                <div class="progress-card">
+                    <h3>Protein</h3>
+                    <div class="progress-bar" style="width: 75%;">120/160 g</div>
+                </div>
+                <div class="progress-card">
+                    <h3>Body Weight</h3>
+                    <p>Current: 165 lbs | Target: 150 lbs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="nutrition">
+        <h2>Daily Nutrition Tracking</h2>
+        <div class="nutrition-container">
+            <table class="nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Calories</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Breakfast</td>
+                        <td>400 kcal</td>
+                        <td>30g</td>
+                        <td>50g</td>
+                        <td>15g</td>
+                    </tr>
+                    <!-- Additional rows for other meals -->
+                </tbody>
+            </table>
+            <div class="meal-suggestions">
+                <h3>Meal Plan Suggestions</h3>
+                <p>Suggested Lunch: Grilled Chicken Salad (400 kcal, 35g protein, 20g carbs, 10g fats)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workouts Section -->
+    <section id="workouts" class="workouts">
+        <h2>Today's Workout Plan</h2>
+        <div class="workout-plan">
+            <ul>
+                <li>Warm-Up: 10-minute cardio</li>
+                <li>Strength Training: 4 sets of squats</li>
+                <li>Cool Down: 15-minute stretching</li>
+            </ul>
+        </div>
+        <div class="member-sharing">
+            <h3>Share Your Progress</h3>
+            <input type="checkbox" id="share-progress" name="share-progress">
+            <label for="share-progress">Share my workout data with fellow members</label>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile">
+        <h2>Profile Settings</h2>
+        <form class="profile-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="[User]">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="user@example.com">
+
+            <label for="sharing-options">Data Sharing Options:</label>
+            <select id="sharing-options">
+                <option value="private">Private</option>
+                <option value="friends">Friends Only</option>
+                <option value="public">Public</option>
+            </select>
+            <button type="submit">Save Changes</button>
+        </form>
+    </section>
+
+    <!-- Admin Section -->
+    <section id="admin" class="admin">
+        <h2>Admin Dashboard</h2>
+        <div class="admin-container">
+            <div class="post-workouts">
+                <h3>Post Workout Plan</h3>
+                <textarea placeholder="Enter today's workout..."></textarea>
+                <button>Post Workout</button>
+            </div>
+            <div class="announcements">
+                <h3>Post Announcement</h3>
+                <textarea placeholder="Enter announcement..."></textarea>
+                <button>Post Announcement</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Get 7K Fit. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
