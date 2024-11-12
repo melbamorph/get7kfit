@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const USERNAME = "user1";
     const PASSWORD = "password123";
 
-    // Get the current path name
+    // Get the current URL path
     const currentPath = window.location.pathname;
 
     // Login form handling
@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     }
 
-    // Redirect users to the login page if they are not authenticated and not already on the login page
-    if (currentPath !== "/login.html" && !localStorage.getItem("loggedIn")) {
+    // Check if the user is not authenticated and is trying to access a protected page
+    if (!currentPath.endsWith("login.html") && !localStorage.getItem("loggedIn")) {
         window.location.href = "login.html";
     }
 
